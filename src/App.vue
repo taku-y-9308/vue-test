@@ -1,18 +1,17 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
-<script>
+<script setup>
 import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+import MenuBar from './components/MenuBar.vue'
+import InformationBar from './components/InformationBar.vue'
 </script>
+
+<template>
+  <MenuBar/>
+  <InformationBar/>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="shiftmanagementapp"/>
+  <button class="btn btn-primary">bootstrap-btn</button>
+
+</template>
 
 <style>
 #app {
